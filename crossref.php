@@ -3,16 +3,18 @@
 require_once(dirname(__FILE__) . '/utils.php');
 
 $debug = true;
-$debug = false;
+//$debug = false;
 
 $container = 'American Midland Naturalist';
 $container = 'Annals of Botany. Oxford';
 $container = 'Arctoa';
 $container = 'Phytotaxa';
 
-$sql = 'SELECT * FROM `references` WHERE containerTitle="' . $container . '"';
+$container = 'Cryptogamie, Bryologie';
 
-$sql = 'SELECT * FROM `references`';
+$sql = 'SELECT * FROM `references` WHERE containerTitle="' . $container . '" AND doi IS NULL';
+
+//$sql = 'SELECT * FROM `references`';
 
 
 $data = do_query($sql);
