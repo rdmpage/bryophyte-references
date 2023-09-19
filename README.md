@@ -1,8 +1,10 @@
 # Bryophyte References
 
-File of TROPICOS data.
+File of TROPICOS data `bryophytes_taxon_source.tsv`.
 
 Note that the page range separation character is inconsistent, may be hyphen, may be dash.
+
+Export is tab-delimited (despite `.csv` extension).
 
 ## MySQL
 
